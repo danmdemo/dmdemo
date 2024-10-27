@@ -1,13 +1,13 @@
 Object Detail Report (*OBJDETAIL)
- [0] *PGM RPGLE      DMPRD1OBJ/CALC010                    (Exists)
+ [0] *PGM RPGLE      DMDMOP1OBJ/CALC010                   (Exists)
         REQ{0}->[1]  *MODULE RPGLE QTEMP/CALC010          (Missing)
-           REQ{0}->[2]  *SRCMBR RPGLE DMPRD1/QRPGLESRC(CALC010)          (Exists)
-  Object, Owner, TS: *PGM DMPRD1OBJ/CALC010 RPGLE, DMAGID_X, 2024-10-21 11:00:33
+           REQ{0}->[2]  *SRCMBR RPGLE DMDEMOPRD1/QRPGLESRC(CALC010)      (Exists)
+  Object, Owner, TS: *PGM DMDMOP1OBJ/CALC010 RPGLE, DMAGID_X, 2024-10-26 20:09:51
   Created on release V7R4M0 for release V7R4M0
 
 
  Pgm Data:
-  Object, Owner, TS: *PGM DMPRD1OBJ/CALC010 RPGLE, DMAGID_X, 2024-10-21 11:00:33
+  Object, Owner, TS: *PGM DMDMOP1OBJ/CALC010 RPGLE, DMAGID_X, 2024-10-26 20:09:51
   Created on release V7R4M0 for release V7R4M0
 
   isILE(1)  allowReinit()  allowRtvCLsrc(*NO)
@@ -22,15 +22,15 @@ Object Detail Report (*OBJDETAIL)
    sharedActvGroup(*NO)
 
  [1] *MODULE RPGLE   QTEMP/CALC010                        (Missing)
-        REQ{0}->[2]  *SRCMBR RPGLE DMPRD1/QRPGLESRC(CALC010)          (Exists)
-  Object, Owner, TS: *MODULE QTEMP/CALC010 RPGLE, , 2024-10-21 11:00:33
-  Source           : *MBR DMPRD1/QRPGLESRC(CALC010)  2023-11-05 17:28:40
+        REQ{0}->[2]  *SRCMBR RPGLE DMDEMOPRD1/QRPGLESRC(CALC010)      (Exists)
+  Object, Owner, TS: *MODULE QTEMP/CALC010 RPGLE, , 2024-10-26 20:09:51
+  Source           : *MBR DMDEMOPRD1/QRPGLESRC(CALC010)  2024-10-26 20:01:41
   Created on release V7R4M0 for release V7R4M0
   LanguageID: *JOBRUN, Sort Seq Table: *HEX
 
  Module Data:
-  Object, Owner, TS: *MODULE QTEMP/CALC010 RPGLE, , 2024-10-21 11:00:33
-  Source           : *MBR DMPRD1/QRPGLESRC(CALC010)  2023-11-05 17:28:40
+  Object, Owner, TS: *MODULE QTEMP/CALC010 RPGLE, , 2024-10-26 20:09:51
+  Source           : *MBR DMDEMOPRD1/QRPGLESRC(CALC010)  2024-10-26 20:01:41
   Created on release V7R4M0 for release V7R4M0
   LanguageID: *JOBRUN, Sort Seq Table: *HEX
   objCtlLvl()  LicIntCdeOpt()
@@ -38,15 +38,15 @@ Object Detail Report (*OBJDETAIL)
   allowRtvCLsrc(*NO)  dbgData(*STMT)  profileData()  teraspaceEnabled(*YES)
   enablePerfClc()  modDomain()  modState()  stgModel(*SNGLVL)
 
- [2] *SRCMBR RPGLE   DMPRD1/QRPGLESRC       (CALC010)     (Exists)
-  Object, Owner, TS: *SRCMBR DMPRD1/QRPGLESRC RPGLE, , 2024-10-21 11:00:33
-  Source           : *MBR DMPRD1/QRPGLESRC(CALC010)  2023-11-05 17:28:40
+ [2] *SRCMBR RPGLE   DMDEMOPRD1/QRPGLESRC   (CALC010)     (Exists)
+  Object, Owner, TS: *SRCMBR DMDEMOPRD1/QRPGLESRC RPGLE, , 2024-10-26 20:09:51
+  Source           : *MBR DMDEMOPRD1/QRPGLESRC(CALC010)  2024-10-26 20:01:41
   Created on release V7R4M0 for release V7R4M0
   LanguageID: *JOBRUN, Sort Seq Table: *HEX
 
  Module Data:
-  Object, Owner, TS: *SRCMBR DMPRD1/QRPGLESRC RPGLE, , 2024-10-21 11:00:33
-  Source           : *MBR DMPRD1/QRPGLESRC(CALC010)  2023-11-05 17:28:40
+  Object, Owner, TS: *SRCMBR DMDEMOPRD1/QRPGLESRC RPGLE, , 2024-10-26 20:09:51
+  Source           : *MBR DMDEMOPRD1/QRPGLESRC(CALC010)  2024-10-26 20:01:41
   Created on release V7R4M0 for release V7R4M0
   LanguageID: *JOBRUN, Sort Seq Table: *HEX
   objCtlLvl()  LicIntCdeOpt()
@@ -54,23 +54,23 @@ Object Detail Report (*OBJDETAIL)
   allowRtvCLsrc(*NO)  dbgData(*STMT)  profileData()  teraspaceEnabled(*YES)
   enablePerfClc()  modDomain()  modState()  stgModel(*SNGLVL)
 
- [3] *PGM CLE        DMPRD1OBJ/HELLOWORLD                 (Exists)
-        REQ{0}->[4]  *SRVPGM DMPRD1OBJ/HW_SRVP      (Exists)
-           REQ{0}->[5]  *MODULE RPGLE DMPRD1OBJ/HW_RPG       (Exists)
-              REQ{0}->[6]  *SRCMBR RPGLE DMPRD1/QRPGLESRC(HW_RPG)           (Exists)
-           REQ{1}->[7]  *MODULE CLLE DMPRD1OBJ/HW_CL        (Exists)
-              REQ{0}->[8]  *SRCMBR CL DMPRD1/QCLSRC(HW_CL)               (Exists)
-        REQ{1}->[9]  *MODULE CLE DMPRD1OBJ/HELLOWORLD   (Exists)
-           REQ{0}->[10] *SRCMBR C DMPRD1/QCSRC(HELLOWORLD)           (Exists)
-        REQ{2}->[11] *MODULE CPPLE DMPRD1OBJ/HW_CPP       (Exists)
-           REQ{0}->[12] *SRCMBR CPP DMPRD1/QCPPSRC(HW_CPP)             (Exists)
-  Object, Owner, TS: *PGM DMPRD1OBJ/HELLOWORLD CLE, DMAGID_X, 2024-10-22 20:30:50
+ [3] *PGM CLE        DMDMOP1OBJ/HELLOWORLD                (Exists)
+        REQ{0}->[4]  *SRVPGM DMDMOP1OBJ/HW_SRVP     (Exists)
+           REQ{0}->[5]  *MODULE RPGLE DMDMOP1OBJ/HW_RPG      (Exists)
+              REQ{0}->[6]  *SRCMBR RPGLE DMDEMOPRD1/QRPGLESRC(HW_RPG)       (Exists)
+           REQ{1}->[7]  *MODULE CLLE DMDMOP1OBJ/HW_CL       (Exists)
+              REQ{0}->[8]  *SRCMBR CL DMDEMOPRD1/QCLSRC(HW_CL)           (Exists)
+        REQ{1}->[9]  *MODULE CLE DMDMOP1OBJ/HELLOWORLD  (Exists)
+           REQ{0}->[10] *SRCMBR C DMDEMOPRD1/QCSRC(HELLOWORLD)       (Exists)
+        REQ{2}->[11] *MODULE CPPLE DMDMOP1OBJ/HW_CPP      (Exists)
+           REQ{0}->[12] *SRCMBR CPP DMDEMOPRD1/QCPPSRC(HW_CPP)         (Exists)
+  Object, Owner, TS: *PGM DMDMOP1OBJ/HELLOWORLD CLE, DMAGID_X, 2024-10-26 20:09:55
   Text: The source for our Hello World program
   Created on release V7R4M0 for release V7R4M0
 
 
  Pgm Data:
-  Object, Owner, TS: *PGM DMPRD1OBJ/HELLOWORLD CLE, DMAGID_X, 2024-10-22 20:30:50
+  Object, Owner, TS: *PGM DMDMOP1OBJ/HELLOWORLD CLE, DMAGID_X, 2024-10-26 20:09:55
   Text: The source for our Hello World program
   Created on release V7R4M0 for release V7R4M0
 
@@ -79,23 +79,23 @@ Object Detail Report (*OBJDETAIL)
   pgmDomain(*USER)  pgmState(*USER)
   stgModel(*SNGLVL)  usrProfileOpt(*USER)
   ILE Data:
-   PEP(DMPRD1OBJ/HELLOWORLD)  actvGroup(*NEW)   argumentOpt(*NO)   profilingData(*NOCOL)
+   PEP(DMDMOP1OBJ/HELLOWORLD)  actvGroup(*NEW)   argumentOpt(*NO)   profilingData(*NOCOL)
    pgmCCSID(65535)   nbrModules(2)   nbrSrvpgms(4)
    nbrCopyrights(0)   nbrUnresolvedRefs(0)
    allowReinit(*NO)   allowUpdate(*YES)   allowLibUpdate(*NO)
    sharedActvGroup(*NO)
 
- [4] *SRVPGM         DMPRD1OBJ/HW_SRVP                    (Exists)
-        REQ{0}->[5]  *MODULE RPGLE DMPRD1OBJ/HW_RPG       (Exists)
-           REQ{0}->[6]  *SRCMBR RPGLE DMPRD1/QRPGLESRC(HW_RPG)           (Exists)
-        REQ{1}->[7]  *MODULE CLLE DMPRD1OBJ/HW_CL        (Exists)
-           REQ{0}->[8]  *SRCMBR CL DMPRD1/QCLSRC(HW_CL)               (Exists)
-  Object, Owner, TS: *SRVPGM DMPRD1OBJ/HW_SRVP, DMAGID_X, 2024-10-22 20:30:47
+ [4] *SRVPGM         DMDMOP1OBJ/HW_SRVP                   (Exists)
+        REQ{0}->[5]  *MODULE RPGLE DMDMOP1OBJ/HW_RPG      (Exists)
+           REQ{0}->[6]  *SRCMBR RPGLE DMDEMOPRD1/QRPGLESRC(HW_RPG)       (Exists)
+        REQ{1}->[7]  *MODULE CLLE DMDMOP1OBJ/HW_CL       (Exists)
+           REQ{0}->[8]  *SRCMBR CL DMDEMOPRD1/QCLSRC(HW_CL)           (Exists)
+  Object, Owner, TS: *SRVPGM DMDMOP1OBJ/HW_SRVP, DMAGID_X, 2024-10-26 20:09:54
   Created on release V7R4M0 for release V7R4M0
 
 
  Srvpgm Data:
-  Object, Owner, TS: *SRVPGM DMPRD1OBJ/HW_SRVP, DMAGID_X, 2024-10-22 20:30:47
+  Object, Owner, TS: *SRVPGM DMDMOP1OBJ/HW_SRVP, DMAGID_X, 2024-10-26 20:09:54
   Created on release V7R4M0 for release V7R4M0
 
   actvGroup(*CALLER)  
@@ -105,35 +105,17 @@ Object Detail Report (*OBJDETAIL)
   pgmDomain(*USER)
   pgmState(*USER)  stgModel(*SNGLVL)  usrProfileOpt(*USER)
 
- [5] *MODULE RPGLE   DMPRD1OBJ/HW_RPG                     (Exists)
-        REQ{0}->[6]  *SRCMBR RPGLE DMPRD1/QRPGLESRC(HW_RPG)           (Exists)
-  Object, Owner, TS: *MODULE DMPRD1OBJ/HW_RPG RPGLE, DMAGID_X, 2024-10-22 20:30:47
-  Source           : *MBR DMPRD1/QRPGLESRC(HW_RPG)  2024-09-05 08:38:41
+ [5] *MODULE RPGLE   DMDMOP1OBJ/HW_RPG                    (Exists)
+        REQ{0}->[6]  *SRCMBR RPGLE DMDEMOPRD1/QRPGLESRC(HW_RPG)       (Exists)
+  Object, Owner, TS: *MODULE DMDMOP1OBJ/HW_RPG RPGLE, DMAGID_X, 2024-10-26 20:09:53
+  Source           : *MBR DMDEMOPRD1/QRPGLESRC(HW_RPG)  2024-10-26 20:01:41
   Text: Hello World RPG module
   Created on release V7R4M0 for release V7R4M0
   LanguageID: *JOBRUN, Sort Seq Table: *HEX
 
  Module Data:
-  Object, Owner, TS: *MODULE DMPRD1OBJ/HW_RPG RPGLE, DMAGID_X, 2024-10-22 20:30:47
-  Source           : *MBR DMPRD1/QRPGLESRC(HW_RPG)  2024-09-05 08:38:41
-  Text: Hello World RPG module
-  Created on release V7R4M0 for release V7R4M0
-  LanguageID: *JOBRUN, Sort Seq Table: *HEX
-  objCtlLvl()  LicIntCdeOpt()
-  moduleCCSID(37)  optLevel(10)  nbrSQLstmts(0)
-  allowRtvCLsrc(*NO)  dbgData(*STMT)  profileData(*NOCOL)  teraspaceEnabled(*YES)
-  enablePerfClc(*PEP)  modDomain(*SYSTEM)  modState(*USER)  stgModel(*INHERIT)
-
- [6] *SRCMBR RPGLE   DMPRD1/QRPGLESRC       (HW_RPG)      (Exists)
-  Object, Owner, TS: *SRCMBR DMPRD1/QRPGLESRC RPGLE, DMAGID_X, 2024-10-22 20:30:47
-  Source           : *MBR DMPRD1/QRPGLESRC(HW_RPG)  2024-09-05 08:38:41
-  Text: Hello World RPG module
-  Created on release V7R4M0 for release V7R4M0
-  LanguageID: *JOBRUN, Sort Seq Table: *HEX
-
- Module Data:
-  Object, Owner, TS: *SRCMBR DMPRD1/QRPGLESRC RPGLE, DMAGID_X, 2024-10-22 20:30:47
-  Source           : *MBR DMPRD1/QRPGLESRC(HW_RPG)  2024-09-05 08:38:41
+  Object, Owner, TS: *MODULE DMDMOP1OBJ/HW_RPG RPGLE, DMAGID_X, 2024-10-26 20:09:53
+  Source           : *MBR DMDEMOPRD1/QRPGLESRC(HW_RPG)  2024-10-26 20:01:41
   Text: Hello World RPG module
   Created on release V7R4M0 for release V7R4M0
   LanguageID: *JOBRUN, Sort Seq Table: *HEX
@@ -142,17 +124,35 @@ Object Detail Report (*OBJDETAIL)
   allowRtvCLsrc(*NO)  dbgData(*STMT)  profileData(*NOCOL)  teraspaceEnabled(*YES)
   enablePerfClc(*PEP)  modDomain(*SYSTEM)  modState(*USER)  stgModel(*INHERIT)
 
- [7] *MODULE CLLE    DMPRD1OBJ/HW_CL                      (Exists)
-        REQ{0}->[8]  *SRCMBR CL DMPRD1/QCLSRC(HW_CL)               (Exists)
-  Object, Owner, TS: *MODULE DMPRD1OBJ/HW_CL CLLE, DMAGID_X, 2024-10-22 20:30:47
-  Source           : *MBR DMPRD1/QCLSRC(HW_CL)  2023-11-05 17:30:26
+ [6] *SRCMBR RPGLE   DMDEMOPRD1/QRPGLESRC   (HW_RPG)      (Exists)
+  Object, Owner, TS: *SRCMBR DMDEMOPRD1/QRPGLESRC RPGLE, DMAGID_X, 2024-10-26 20:09:53
+  Source           : *MBR DMDEMOPRD1/QRPGLESRC(HW_RPG)  2024-10-26 20:01:41
+  Text: Hello World RPG module
+  Created on release V7R4M0 for release V7R4M0
+  LanguageID: *JOBRUN, Sort Seq Table: *HEX
+
+ Module Data:
+  Object, Owner, TS: *SRCMBR DMDEMOPRD1/QRPGLESRC RPGLE, DMAGID_X, 2024-10-26 20:09:53
+  Source           : *MBR DMDEMOPRD1/QRPGLESRC(HW_RPG)  2024-10-26 20:01:41
+  Text: Hello World RPG module
+  Created on release V7R4M0 for release V7R4M0
+  LanguageID: *JOBRUN, Sort Seq Table: *HEX
+  objCtlLvl()  LicIntCdeOpt()
+  moduleCCSID(37)  optLevel(10)  nbrSQLstmts(0)
+  allowRtvCLsrc(*NO)  dbgData(*STMT)  profileData(*NOCOL)  teraspaceEnabled(*YES)
+  enablePerfClc(*PEP)  modDomain(*SYSTEM)  modState(*USER)  stgModel(*INHERIT)
+
+ [7] *MODULE CLLE    DMDMOP1OBJ/HW_CL                     (Exists)
+        REQ{0}->[8]  *SRCMBR CL DMDEMOPRD1/QCLSRC(HW_CL)           (Exists)
+  Object, Owner, TS: *MODULE DMDMOP1OBJ/HW_CL CLLE, DMAGID_X, 2024-10-26 20:09:53
+  Source           : *MBR DMDEMOPRD1/QCLSRC(HW_CL)  2024-10-26 20:01:41
   Text: Hello World from CL
   Created on release V7R4M0 for release V7R4M0
   LanguageID: *JOBRUN, Sort Seq Table: *HEX
 
  Module Data:
-  Object, Owner, TS: *MODULE DMPRD1OBJ/HW_CL CLLE, DMAGID_X, 2024-10-22 20:30:47
-  Source           : *MBR DMPRD1/QCLSRC(HW_CL)  2023-11-05 17:30:26
+  Object, Owner, TS: *MODULE DMDMOP1OBJ/HW_CL CLLE, DMAGID_X, 2024-10-26 20:09:53
+  Source           : *MBR DMDEMOPRD1/QCLSRC(HW_CL)  2024-10-26 20:01:41
   Text: Hello World from CL
   Created on release V7R4M0 for release V7R4M0
   LanguageID: *JOBRUN, Sort Seq Table: *HEX
@@ -161,16 +161,16 @@ Object Detail Report (*OBJDETAIL)
   allowRtvCLsrc(*YES)  dbgData(*STMT)  profileData(*NOCOL)  teraspaceEnabled(*YES)
   enablePerfClc(*PEP)  modDomain(*SYSTEM)  modState(*USER)  stgModel(*INHERIT)
 
- [8] *SRCMBR CL      DMPRD1/QCLSRC          (HW_CL)       (Exists)
-  Object, Owner, TS: *SRCMBR DMPRD1/QCLSRC CL, DMAGID_X, 2024-10-22 20:30:47
-  Source           : *MBR DMPRD1/QCLSRC(HW_CL)  2023-11-05 17:30:26
+ [8] *SRCMBR CL      DMDEMOPRD1/QCLSRC      (HW_CL)       (Exists)
+  Object, Owner, TS: *SRCMBR DMDEMOPRD1/QCLSRC CL, DMAGID_X, 2024-10-26 20:09:53
+  Source           : *MBR DMDEMOPRD1/QCLSRC(HW_CL)  2024-10-26 20:01:41
   Text: Hello World from CL
   Created on release V7R4M0 for release V7R4M0
   LanguageID: *JOBRUN, Sort Seq Table: *HEX
 
  Module Data:
-  Object, Owner, TS: *SRCMBR DMPRD1/QCLSRC CL, DMAGID_X, 2024-10-22 20:30:47
-  Source           : *MBR DMPRD1/QCLSRC(HW_CL)  2023-11-05 17:30:26
+  Object, Owner, TS: *SRCMBR DMDEMOPRD1/QCLSRC CL, DMAGID_X, 2024-10-26 20:09:53
+  Source           : *MBR DMDEMOPRD1/QCLSRC(HW_CL)  2024-10-26 20:01:41
   Text: Hello World from CL
   Created on release V7R4M0 for release V7R4M0
   LanguageID: *JOBRUN, Sort Seq Table: *HEX
@@ -179,35 +179,17 @@ Object Detail Report (*OBJDETAIL)
   allowRtvCLsrc(*YES)  dbgData(*STMT)  profileData(*NOCOL)  teraspaceEnabled(*YES)
   enablePerfClc(*PEP)  modDomain(*SYSTEM)  modState(*USER)  stgModel(*INHERIT)
 
- [9] *MODULE CLE     DMPRD1OBJ/HELLOWORLD                 (Exists)
-        REQ{0}->[10] *SRCMBR C DMPRD1/QCSRC(HELLOWORLD)           (Exists)
-  Object, Owner, TS: *MODULE DMPRD1OBJ/HELLOWORLD CLE, DMAGID_X, 2024-10-22 20:30:46
-  Source           : *MBR DMPRD1/QCSRC(HELLOWORLD)  2023-11-05 17:28:40
+ [9] *MODULE CLE     DMDMOP1OBJ/HELLOWORLD                (Exists)
+        REQ{0}->[10] *SRCMBR C DMDEMOPRD1/QCSRC(HELLOWORLD)       (Exists)
+  Object, Owner, TS: *MODULE DMDMOP1OBJ/HELLOWORLD CLE, DMAGID_X, 2024-10-26 20:09:52
+  Source           : *MBR DMDEMOPRD1/QCSRC(HELLOWORLD)  2024-10-26 20:01:41
   Text: The source for our Hello World program
   Created on release V7R4M0 for release V7R4M0
   LanguageID: *JOBRUN, Sort Seq Table: *HEX
 
  Module Data:
-  Object, Owner, TS: *MODULE DMPRD1OBJ/HELLOWORLD CLE, DMAGID_X, 2024-10-22 20:30:46
-  Source           : *MBR DMPRD1/QCSRC(HELLOWORLD)  2023-11-05 17:28:40
-  Text: The source for our Hello World program
-  Created on release V7R4M0 for release V7R4M0
-  LanguageID: *JOBRUN, Sort Seq Table: *HEX
-  objCtlLvl()  LicIntCdeOpt()
-  moduleCCSID(37)  optLevel(10)  nbrSQLstmts(0)
-  allowRtvCLsrc(*NO)  dbgData(*NONE)  profileData(*NOCOL)  teraspaceEnabled(*YES)
-  enablePerfClc(*PEP)  modDomain(*SYSTEM)  modState(*USER)  stgModel(*SNGLVL)
-
- [10] *SRCMBR C       DMPRD1/QCSRC           (HELLOWORLD)  (Exists)
-  Object, Owner, TS: *SRCMBR DMPRD1/QCSRC C, DMAGID_X, 2024-10-22 20:30:46
-  Source           : *MBR DMPRD1/QCSRC(HELLOWORLD)  2023-11-05 17:28:40
-  Text: The source for our Hello World program
-  Created on release V7R4M0 for release V7R4M0
-  LanguageID: *JOBRUN, Sort Seq Table: *HEX
-
- Module Data:
-  Object, Owner, TS: *SRCMBR DMPRD1/QCSRC C, DMAGID_X, 2024-10-22 20:30:46
-  Source           : *MBR DMPRD1/QCSRC(HELLOWORLD)  2023-11-05 17:28:40
+  Object, Owner, TS: *MODULE DMDMOP1OBJ/HELLOWORLD CLE, DMAGID_X, 2024-10-26 20:09:52
+  Source           : *MBR DMDEMOPRD1/QCSRC(HELLOWORLD)  2024-10-26 20:01:41
   Text: The source for our Hello World program
   Created on release V7R4M0 for release V7R4M0
   LanguageID: *JOBRUN, Sort Seq Table: *HEX
@@ -216,54 +198,72 @@ Object Detail Report (*OBJDETAIL)
   allowRtvCLsrc(*NO)  dbgData(*NONE)  profileData(*NOCOL)  teraspaceEnabled(*YES)
   enablePerfClc(*PEP)  modDomain(*SYSTEM)  modState(*USER)  stgModel(*SNGLVL)
 
- [11] *MODULE CPPLE   DMPRD1OBJ/HW_CPP                     (Exists)
-        REQ{0}->[12] *SRCMBR CPP DMPRD1/QCPPSRC(HW_CPP)             (Exists)
-  Object, Owner, TS: *MODULE DMPRD1OBJ/HW_CPP CPPLE, DMAGID_X, 2024-10-22 20:30:49
-  Source           : *MBR DMPRD1/QCPPSRC(HW_CPP)  2023-11-05 17:28:40
+ [10] *SRCMBR C       DMDEMOPRD1/QCSRC       (HELLOWORLD)  (Exists)
+  Object, Owner, TS: *SRCMBR DMDEMOPRD1/QCSRC C, DMAGID_X, 2024-10-26 20:09:52
+  Source           : *MBR DMDEMOPRD1/QCSRC(HELLOWORLD)  2024-10-26 20:01:41
+  Text: The source for our Hello World program
+  Created on release V7R4M0 for release V7R4M0
+  LanguageID: *JOBRUN, Sort Seq Table: *HEX
+
+ Module Data:
+  Object, Owner, TS: *SRCMBR DMDEMOPRD1/QCSRC C, DMAGID_X, 2024-10-26 20:09:52
+  Source           : *MBR DMDEMOPRD1/QCSRC(HELLOWORLD)  2024-10-26 20:01:41
+  Text: The source for our Hello World program
+  Created on release V7R4M0 for release V7R4M0
+  LanguageID: *JOBRUN, Sort Seq Table: *HEX
+  objCtlLvl()  LicIntCdeOpt()
+  moduleCCSID(37)  optLevel(10)  nbrSQLstmts(0)
+  allowRtvCLsrc(*NO)  dbgData(*NONE)  profileData(*NOCOL)  teraspaceEnabled(*YES)
+  enablePerfClc(*PEP)  modDomain(*SYSTEM)  modState(*USER)  stgModel(*SNGLVL)
+
+ [11] *MODULE CPPLE   DMDMOP1OBJ/HW_CPP                    (Exists)
+        REQ{0}->[12] *SRCMBR CPP DMDEMOPRD1/QCPPSRC(HW_CPP)         (Exists)
+  Object, Owner, TS: *MODULE DMDMOP1OBJ/HW_CPP CPPLE, DMAGID_X, 2024-10-26 20:09:55
+  Source           : *MBR DMDEMOPRD1/QCPPSRC(HW_CPP)  2024-10-26 20:01:41
   Text: Hello World C++ source
   Created on release V7R4M0 for release V7R4M0
   LanguageID: *JOBRUN, Sort Seq Table: *HEX
 
  Module Data:
-  Object, Owner, TS: *MODULE DMPRD1OBJ/HW_CPP CPPLE, DMAGID_X, 2024-10-22 20:30:49
-  Source           : *MBR DMPRD1/QCPPSRC(HW_CPP)  2023-11-05 17:28:40
+  Object, Owner, TS: *MODULE DMDMOP1OBJ/HW_CPP CPPLE, DMAGID_X, 2024-10-26 20:09:55
+  Source           : *MBR DMDEMOPRD1/QCPPSRC(HW_CPP)  2024-10-26 20:01:41
   Text: Hello World C++ source
   Created on release V7R4M0 for release V7R4M0
   LanguageID: *JOBRUN, Sort Seq Table: *HEX
-  objCtlLvl(42970330)  LicIntCdeOpt()
+  objCtlLvl(43010309)  LicIntCdeOpt()
   moduleCCSID(37)  optLevel(10)  nbrSQLstmts(0)
   allowRtvCLsrc(*NO)  dbgData(*NONE)  profileData(*NOCOL)  teraspaceEnabled(*YES)
   enablePerfClc(*PEP)  modDomain(*SYSTEM)  modState(*USER)  stgModel(*SNGLVL)
 
- [12] *SRCMBR CPP     DMPRD1/QCPPSRC         (HW_CPP)      (Exists)
-  Object, Owner, TS: *SRCMBR DMPRD1/QCPPSRC CPP, DMAGID_X, 2024-10-22 20:30:49
-  Source           : *MBR DMPRD1/QCPPSRC(HW_CPP)  2023-11-05 17:28:40
+ [12] *SRCMBR CPP     DMDEMOPRD1/QCPPSRC     (HW_CPP)      (Exists)
+  Object, Owner, TS: *SRCMBR DMDEMOPRD1/QCPPSRC CPP, DMAGID_X, 2024-10-26 20:09:55
+  Source           : *MBR DMDEMOPRD1/QCPPSRC(HW_CPP)  2024-10-26 20:01:41
   Text: Hello World C++ source
   Created on release V7R4M0 for release V7R4M0
   LanguageID: *JOBRUN, Sort Seq Table: *HEX
 
  Module Data:
-  Object, Owner, TS: *SRCMBR DMPRD1/QCPPSRC CPP, DMAGID_X, 2024-10-22 20:30:49
-  Source           : *MBR DMPRD1/QCPPSRC(HW_CPP)  2023-11-05 17:28:40
+  Object, Owner, TS: *SRCMBR DMDEMOPRD1/QCPPSRC CPP, DMAGID_X, 2024-10-26 20:09:55
+  Source           : *MBR DMDEMOPRD1/QCPPSRC(HW_CPP)  2024-10-26 20:01:41
   Text: Hello World C++ source
   Created on release V7R4M0 for release V7R4M0
   LanguageID: *JOBRUN, Sort Seq Table: *HEX
-  objCtlLvl(42970330)  LicIntCdeOpt()
+  objCtlLvl(43010309)  LicIntCdeOpt()
   moduleCCSID(37)  optLevel(10)  nbrSQLstmts(0)
   allowRtvCLsrc(*NO)  dbgData(*NONE)  profileData(*NOCOL)  teraspaceEnabled(*YES)
   enablePerfClc(*PEP)  modDomain(*SYSTEM)  modState(*USER)  stgModel(*SNGLVL)
 
- [13] *CMD            DMPRD1OBJ/CALC010                    (Exists)
-        REQ{0}->[14] *SRCMBR CMD DMPRD1/QCMDSRC(CALC010)            (Exists)
-  Object, Owner, TS: *CMD DMPRD1OBJ/CALC010, , 
-  Source           : *MBR DMPRD1/QCMDSRC(CALC010)  
+ [13] *CMD            DMDMOP1OBJ/CALC010                   (Exists)
+        REQ{0}->[14] *SRCMBR CMD DMDEMOPRD1/QCMDSRC(CALC010)        (Exists)
+  Object, Owner, TS: *CMD DMDMOP1OBJ/CALC010, , 
+  Source           : *MBR DMDEMOPRD1/QCMDSRC(CALC010)  
 
 
  Cmd Data:
-  Object, Owner, TS: *CMD DMPRD1OBJ/CALC010, , 
-  Source           : *MBR DMPRD1/QCMDSRC(CALC010)  
+  Object, Owner, TS: *CMD DMDMOP1OBJ/CALC010, , 
+  Source           : *MBR DMDEMOPRD1/QCMDSRC(CALC010)  
 
-  Cmd_Proc(DMPRD1OBJ/CALC010)  Val_Proc(*NONE)
+  Cmd_Proc(DMDMOP1OBJ/CALC010)  Val_Proc(*NONE)
   Mode: *ALL  Allow: *ALL  Allow_Limited(0)
   Current_Lib(*NOCHG)  Product_Lib(*NOCHG)  CCSID(37)  Max_Parameters(*NOMAX)
   Prompt(*NONE)  Message(*LIBL/QCPFMSG)
@@ -273,16 +273,16 @@ Object Detail Report (*OBJDETAIL)
   Enable_GUI(0)  Prompt_Message_File_Text(1)
   Threadsafe(*COND)  Multithreaded_Job_Action(*NORUN)
 
- [14] *SRCMBR CMD     DMPRD1/QCMDSRC         (CALC010)     (Exists)
-  Object, Owner, TS: *SRCMBR DMPRD1/QCMDSRC CMD, , 
-  Source           : *MBR DMPRD1/QCMDSRC(CALC010)  
+ [14] *SRCMBR CMD     DMDEMOPRD1/QCMDSRC     (CALC010)     (Exists)
+  Object, Owner, TS: *SRCMBR DMDEMOPRD1/QCMDSRC CMD, , 
+  Source           : *MBR DMDEMOPRD1/QCMDSRC(CALC010)  
 
 
  Cmd Data:
-  Object, Owner, TS: *SRCMBR DMPRD1/QCMDSRC CMD, , 
-  Source           : *MBR DMPRD1/QCMDSRC(CALC010)  
+  Object, Owner, TS: *SRCMBR DMDEMOPRD1/QCMDSRC CMD, , 
+  Source           : *MBR DMDEMOPRD1/QCMDSRC(CALC010)  
 
-  Cmd_Proc(DMPRD1OBJ/CALC010)  Val_Proc(*NONE)
+  Cmd_Proc(DMDMOP1OBJ/CALC010)  Val_Proc(*NONE)
   Mode: *ALL  Allow: *ALL  Allow_Limited(0)
   Current_Lib(*NOCHG)  Product_Lib(*NOCHG)  CCSID(37)  Max_Parameters(*NOMAX)
   Prompt(*NONE)  Message(*LIBL/QCPFMSG)
@@ -292,19 +292,19 @@ Object Detail Report (*OBJDETAIL)
   Enable_GUI(0)  Prompt_Message_File_Text(1)
   Threadsafe(*COND)  Multithreaded_Job_Action(*NORUN)
 
- [15] *CMD            DMPRD1OBJ/HELLOWORLD                 (Exists)
-        REQ{0}->[16] *SRCMBR CMD DMPRD1/QCMDSRC(HELLOWORLD)         (Exists)
-  Object, Owner, TS: *CMD DMPRD1OBJ/HELLOWORLD, , 
-  Source           : *MBR DMPRD1/QCMDSRC(HELLOWORLD)  
+ [15] *CMD            DMDMOP1OBJ/HELLOWORLD                (Exists)
+        REQ{0}->[16] *SRCMBR CMD DMDEMOPRD1/QCMDSRC(HELLOWORLD)     (Exists)
+  Object, Owner, TS: *CMD DMDMOP1OBJ/HELLOWORLD, , 
+  Source           : *MBR DMDEMOPRD1/QCMDSRC(HELLOWORLD)  
   Text: Hello World command definition
 
 
  Cmd Data:
-  Object, Owner, TS: *CMD DMPRD1OBJ/HELLOWORLD, , 
-  Source           : *MBR DMPRD1/QCMDSRC(HELLOWORLD)  
+  Object, Owner, TS: *CMD DMDMOP1OBJ/HELLOWORLD, , 
+  Source           : *MBR DMDEMOPRD1/QCMDSRC(HELLOWORLD)  
   Text: Hello World command definition
 
-  Cmd_Proc(DMPRD1OBJ/HELLOWORLD)  Val_Proc(*NONE)
+  Cmd_Proc(DMDMOP1OBJ/HELLOWORLD)  Val_Proc(*NONE)
   Mode: *ALL  Allow: *ALL  Allow_Limited(0)
   Current_Lib(*NOCHG)  Product_Lib(*NOCHG)  CCSID(37)  Max_Parameters(*NOMAX)
   Prompt(*NONE)  Message(*LIBL/QCPFMSG)
@@ -314,18 +314,18 @@ Object Detail Report (*OBJDETAIL)
   Enable_GUI(0)  Prompt_Message_File_Text(1)
   Threadsafe(*COND)  Multithreaded_Job_Action(*NORUN)
 
- [16] *SRCMBR CMD     DMPRD1/QCMDSRC         (HELLOWORLD)  (Exists)
-  Object, Owner, TS: *SRCMBR DMPRD1/QCMDSRC CMD, , 
-  Source           : *MBR DMPRD1/QCMDSRC(HELLOWORLD)  
+ [16] *SRCMBR CMD     DMDEMOPRD1/QCMDSRC     (HELLOWORLD)  (Exists)
+  Object, Owner, TS: *SRCMBR DMDEMOPRD1/QCMDSRC CMD, , 
+  Source           : *MBR DMDEMOPRD1/QCMDSRC(HELLOWORLD)  
   Text: Hello World command definition
 
 
  Cmd Data:
-  Object, Owner, TS: *SRCMBR DMPRD1/QCMDSRC CMD, , 
-  Source           : *MBR DMPRD1/QCMDSRC(HELLOWORLD)  
+  Object, Owner, TS: *SRCMBR DMDEMOPRD1/QCMDSRC CMD, , 
+  Source           : *MBR DMDEMOPRD1/QCMDSRC(HELLOWORLD)  
   Text: Hello World command definition
 
-  Cmd_Proc(DMPRD1OBJ/HELLOWORLD)  Val_Proc(*NONE)
+  Cmd_Proc(DMDMOP1OBJ/HELLOWORLD)  Val_Proc(*NONE)
   Mode: *ALL  Allow: *ALL  Allow_Limited(0)
   Current_Lib(*NOCHG)  Product_Lib(*NOCHG)  CCSID(37)  Max_Parameters(*NOMAX)
   Prompt(*NONE)  Message(*LIBL/QCPFMSG)
@@ -335,32 +335,32 @@ Object Detail Report (*OBJDETAIL)
   Enable_GUI(0)  Prompt_Message_File_Text(1)
   Threadsafe(*COND)  Multithreaded_Job_Action(*NORUN)
 
- [17] *MSGF           DMPRD1OBJ/HWMSGS                     (Exists)
-  Object, Owner, TS: *MSGF DMPRD1OBJ/HWMSGS, , 
+ [17] *MSGF           DMDMOP1OBJ/HWMSGS                    (Exists)
+  Object, Owner, TS: *MSGF DMDMOP1OBJ/HWMSGS, , 
 
 
  MsgFile Data:
-  Object, Owner, TS: *MSGF DMPRD1OBJ/HWMSGS, , 
+  Object, Owner, TS: *MSGF DMDMOP1OBJ/HWMSGS, , 
 
   Coded_Character_Set_ID(65535)
   Current_Storage_Size(10240)  Increment_Size(2048)
   Number_of_Increments(0)  Maximum_Increments(7807)
   Message file has 9 message descriptions.
 
- [18] *FILE PF-DTA    DMPRD1OBJ/CUSTOMER                   (Exists)
-        REQ{0}->[19] *SRCMBR DDS DMPRD1/QDDSSRC(CUSTOMER)           (Exists)
-  Object, Owner, TS: *FILE DMPRD1OBJ/CUSTOMER PF, DMAGID_X, 2024-10-22 20:30:44
-  Source           : *MBR DMPRD1/QDDSSRC(CUSTOMER)  
+ [18] *FILE PF-DTA    DMDMOP1OBJ/CUSTOMER                  (Exists)
+        REQ{0}->[19] *SRCMBR DDS DMDEMOPRD1/QDDSSRC(CUSTOMER)       (Exists)
+  Object, Owner, TS: *FILE DMDMOP1OBJ/CUSTOMER PF, DMAGID_X, 2024-10-26 20:09:51
+  Source           : *MBR DMDEMOPRD1/QDDSSRC(CUSTOMER)  
 
 
  File Data for a PF
-  Object, Owner, TS: *FILE DMPRD1OBJ/CUSTOMER PF, DMAGID_X, 2024-10-22 20:30:44
-  Source           : *MBR DMPRD1/QDDSSRC(CUSTOMER)  
+  Object, Owner, TS: *FILE DMDMOP1OBJ/CUSTOMER PF, DMAGID_X, 2024-10-26 20:09:51
+  Source           : *MBR DMDEMOPRD1/QDDSSRC(CUSTOMER)  
 
-  Printing File Information for PF DMPRD1OBJ/CUSTOMER
+  Printing File Information for PF DMDMOP1OBJ/CUSTOMER
    pf_or_lf(0)  data_or_src(0)  arrival_or_keyed(0)  level_check(1)  select_omit_LF(0)
    single_or_double_byte_data(0)  single_or_double_byte_lits(0)  ext_or_pgm_desc_file(0)
-   src_file(QDDSSRC   )  src_mbr(CUSTOMER  )  src_lib(DMPRD1    )
+   src_file(QDDSSRC   )  src_mbr(CUSTOMER  )  src_lib(DMDEMOPRD1)
     alw_read(0)  alw_write(0)  alw_update(0)  alw_delete(0)
    one_or_multi_ccsids(0)  has_allow_nulls(0)  has_var_len(0)  has_TS(0)
    has_graphic_data(0)  distributed_file(0)  has_user_defined_types(0)  has_large_objects(0)  has_datalinks(0)
@@ -369,36 +369,36 @@ Object Detail Report (*OBJDETAIL)
    has_rowid(0)  has_row_change_TS(0)  keep_in_memory(0)
    storage_SSD(0)  max_mbrs(1)  max_wait_time(30)  force_write_ratio(0)
    curr_nbr_of_mbrs(1)  max_rcd_wait(60)  nbr_rcd_fmts(1)  first_supported_VRM(<V7R1M0)
-   org_pub_aut(*CHANGE   )  file_lvl_id(1241022203044)  rel_level(V7R4M0)  lang_id(ENU)  cntry_id(US)  text_ccsid(0)
+   org_pub_aut(*CHANGE   )  file_lvl_id(1241026200951)  rel_level(V7R4M0)  lang_id(ENU)  cntry_id(US)  text_ccsid(0)
    asp(0)  max_nbr_of_fields(42)  max_rcd_len(1477)  sort_seq_tbl_ind(2)
   dfp_rounding( )  dfp_warn( )
 
 
- [19] *SRCMBR DDS     DMPRD1/QDDSSRC         (CUSTOMER)    (Exists)
-  Object, Owner, TS: *SRCMBR DMPRD1/QDDSSRC DDS, DMAGID_X, 2024-10-22 20:30:44
-  Source           : *MBR DMPRD1/QDDSSRC(CUSTOMER)  
+ [19] *SRCMBR DDS     DMDEMOPRD1/QDDSSRC     (CUSTOMER)    (Exists)
+  Object, Owner, TS: *SRCMBR DMDEMOPRD1/QDDSSRC DDS, DMAGID_X, 2024-10-26 20:09:51
+  Source           : *MBR DMDEMOPRD1/QDDSSRC(CUSTOMER)  
 
 
  File Data for a DDS
-  Object, Owner, TS: *SRCMBR DMPRD1/QDDSSRC DDS, DMAGID_X, 2024-10-22 20:30:44
-  Source           : *MBR DMPRD1/QDDSSRC(CUSTOMER)  
+  Object, Owner, TS: *SRCMBR DMDEMOPRD1/QDDSSRC DDS, DMAGID_X, 2024-10-26 20:09:51
+  Source           : *MBR DMDEMOPRD1/QDDSSRC(CUSTOMER)  
 
   
 
- [20] *FILE PF-DTA    DMPRD1OBJ/ITEMS                      (Exists)
-        REQ{0}->[21] *SRCMBR SQL DMPRD1/QSQLSRC(ITEMS)              (Exists)
-  Object, Owner, TS: *FILE DMPRD1OBJ/ITEMS PF, DMAGID_X, 2023-10-26 15:19:10
-  Source           : *MBR DMPRD1/QSQLSRC(ITEMS)  
+ [20] *FILE PF-DTA    DMDMOP1OBJ/ITEMS                     (Exists)
+        REQ{0}->[21] *SRCMBR SQL DMDEMOPRD1/QSQLSRC(ITEMS)          (Exists)
+  Object, Owner, TS: *FILE DMDMOP1OBJ/ITEMS PF, DMAGID_X, 2024-10-26 20:09:58
+  Source           : *MBR DMDEMOPRD1/QSQLSRC(ITEMS)  
 
 
  File Data for a PF
-  Object, Owner, TS: *FILE DMPRD1OBJ/ITEMS PF, DMAGID_X, 2023-10-26 15:19:10
-  Source           : *MBR DMPRD1/QSQLSRC(ITEMS)  
+  Object, Owner, TS: *FILE DMDMOP1OBJ/ITEMS PF, DMAGID_X, 2024-10-26 20:09:58
+  Source           : *MBR DMDEMOPRD1/QSQLSRC(ITEMS)  
 
-  Printing File Information for PF DMPRD1OBJ/ITEMS
+  Printing File Information for PF DMDMOP1OBJ/ITEMS
    pf_or_lf(0)  data_or_src(0)  arrival_or_keyed(0)  level_check(1)  select_omit_LF(0)
    single_or_double_byte_data(0)  single_or_double_byte_lits(0)  ext_or_pgm_desc_file(0)
-   src_file(QSQLSRC   )  src_mbr(ITEMS     )  src_lib(DMPRD1    )
+   src_file(QSQLSRC   )  src_mbr(ITEMS     )  src_lib(DMDEMOPRD1)
     alw_read(0)  alw_write(0)  alw_update(0)  alw_delete(0)
    one_or_multi_ccsids(0)  has_allow_nulls(1)  has_var_len(0)  has_TS(0)
    has_graphic_data(0)  distributed_file(0)  has_user_defined_types(0)  has_large_objects(0)  has_datalinks(0)
@@ -407,36 +407,36 @@ Object Detail Report (*OBJDETAIL)
    has_rowid(0)  has_row_change_TS(0)  keep_in_memory(0)
    storage_SSD(0)  max_mbrs(1)  max_wait_time(30)  force_write_ratio(0)
    curr_nbr_of_mbrs(1)  max_rcd_wait(60)  nbr_rcd_fmts(1)  first_supported_VRM(<V7R1M0)
-   org_pub_aut(*EXCLUDE  )  file_lvl_id(1241022203050)  rel_level(V7R4M0)  lang_id(ENU)  cntry_id(US)  text_ccsid(0)
+   org_pub_aut(*CHANGE   )  file_lvl_id(1241026200958)  rel_level(V7R4M0)  lang_id(ENU)  cntry_id(US)  text_ccsid(0)
    asp(0)  max_nbr_of_fields(8)  max_rcd_len(164)  sort_seq_tbl_ind(2)
   dfp_rounding( )  dfp_warn( )
 
 
- [21] *SRCMBR SQL     DMPRD1/QSQLSRC         (ITEMS)       (Exists)
-  Object, Owner, TS: *SRCMBR DMPRD1/QSQLSRC SQL, DMAGID_X, 2023-10-26 15:19:10
-  Source           : *MBR DMPRD1/QSQLSRC(ITEMS)  
+ [21] *SRCMBR SQL     DMDEMOPRD1/QSQLSRC     (ITEMS)       (Exists)
+  Object, Owner, TS: *SRCMBR DMDEMOPRD1/QSQLSRC SQL, DMAGID_X, 2024-10-26 20:09:58
+  Source           : *MBR DMDEMOPRD1/QSQLSRC(ITEMS)  
 
 
  File Data for a SQL
-  Object, Owner, TS: *SRCMBR DMPRD1/QSQLSRC SQL, DMAGID_X, 2023-10-26 15:19:10
-  Source           : *MBR DMPRD1/QSQLSRC(ITEMS)  
+  Object, Owner, TS: *SRCMBR DMDEMOPRD1/QSQLSRC SQL, DMAGID_X, 2024-10-26 20:09:58
+  Source           : *MBR DMDEMOPRD1/QSQLSRC(ITEMS)  
 
   
 
- [22] *FILE PF-DTA    DMPRD1OBJ/QUOTE                      (Exists)
-        REQ{0}->[23] *SRCMBR DDS DMPRD1/QDDSSRC(QUOTE)              (Exists)
-  Object, Owner, TS: *FILE DMPRD1OBJ/QUOTE PF, DMAGID_X, 2024-10-22 20:30:52
-  Source           : *MBR DMPRD1/QDDSSRC(QUOTE)  
+ [22] *FILE PF-DTA    DMDMOP1OBJ/QUOTE                     (Exists)
+        REQ{0}->[23] *SRCMBR DDS DMDEMOPRD1/QDDSSRC(QUOTE)          (Exists)
+  Object, Owner, TS: *FILE DMDMOP1OBJ/QUOTE PF, DMAGID_X, 2024-10-26 20:09:59
+  Source           : *MBR DMDEMOPRD1/QDDSSRC(QUOTE)  
 
 
  File Data for a PF
-  Object, Owner, TS: *FILE DMPRD1OBJ/QUOTE PF, DMAGID_X, 2024-10-22 20:30:52
-  Source           : *MBR DMPRD1/QDDSSRC(QUOTE)  
+  Object, Owner, TS: *FILE DMDMOP1OBJ/QUOTE PF, DMAGID_X, 2024-10-26 20:09:59
+  Source           : *MBR DMDEMOPRD1/QDDSSRC(QUOTE)  
 
-  Printing File Information for PF DMPRD1OBJ/QUOTE
+  Printing File Information for PF DMDMOP1OBJ/QUOTE
    pf_or_lf(0)  data_or_src(0)  arrival_or_keyed(0)  level_check(1)  select_omit_LF(0)
    single_or_double_byte_data(0)  single_or_double_byte_lits(0)  ext_or_pgm_desc_file(0)
-   src_file(QDDSSRC   )  src_mbr(QUOTE     )  src_lib(DMPRD1    )
+   src_file(QDDSSRC   )  src_mbr(QUOTE     )  src_lib(DMDEMOPRD1)
     alw_read(0)  alw_write(0)  alw_update(0)  alw_delete(0)
    one_or_multi_ccsids(0)  has_allow_nulls(0)  has_var_len(0)  has_TS(0)
    has_graphic_data(0)  distributed_file(0)  has_user_defined_types(0)  has_large_objects(0)  has_datalinks(0)
@@ -445,36 +445,36 @@ Object Detail Report (*OBJDETAIL)
    has_rowid(0)  has_row_change_TS(0)  keep_in_memory(0)
    storage_SSD(0)  max_mbrs(1)  max_wait_time(30)  force_write_ratio(0)
    curr_nbr_of_mbrs(1)  max_rcd_wait(60)  nbr_rcd_fmts(1)  first_supported_VRM(<V7R1M0)
-   org_pub_aut(*CHANGE   )  file_lvl_id(1241022203052)  rel_level(V7R4M0)  lang_id(ENU)  cntry_id(US)  text_ccsid(0)
+   org_pub_aut(*CHANGE   )  file_lvl_id(1241026200959)  rel_level(V7R4M0)  lang_id(ENU)  cntry_id(US)  text_ccsid(0)
    asp(0)  max_nbr_of_fields(56)  max_rcd_len(10871)  sort_seq_tbl_ind(2)
   dfp_rounding( )  dfp_warn( )
 
 
- [23] *SRCMBR DDS     DMPRD1/QDDSSRC         (QUOTE)       (Exists)
-  Object, Owner, TS: *SRCMBR DMPRD1/QDDSSRC DDS, DMAGID_X, 2024-10-22 20:30:52
-  Source           : *MBR DMPRD1/QDDSSRC(QUOTE)  
+ [23] *SRCMBR DDS     DMDEMOPRD1/QDDSSRC     (QUOTE)       (Exists)
+  Object, Owner, TS: *SRCMBR DMDEMOPRD1/QDDSSRC DDS, DMAGID_X, 2024-10-26 20:09:59
+  Source           : *MBR DMDEMOPRD1/QDDSSRC(QUOTE)  
 
 
  File Data for a DDS
-  Object, Owner, TS: *SRCMBR DMPRD1/QDDSSRC DDS, DMAGID_X, 2024-10-22 20:30:52
-  Source           : *MBR DMPRD1/QDDSSRC(QUOTE)  
+  Object, Owner, TS: *SRCMBR DMDEMOPRD1/QDDSSRC DDS, DMAGID_X, 2024-10-26 20:09:59
+  Source           : *MBR DMDEMOPRD1/QDDSSRC(QUOTE)  
 
   
 
- [24] *FILE PF-DTA    DMPRD1OBJ/QUOTEITEM                  (Exists)
-        REQ{0}->[25] *SRCMBR DDS DMPRD1/QDDSSRC(QUOTEITEM)          (Exists)
-  Object, Owner, TS: *FILE DMPRD1OBJ/QUOTEITEM PF, DMAGID_X, 2024-10-22 20:30:52
-  Source           : *MBR DMPRD1/QDDSSRC(QUOTEITEM)  
+ [24] *FILE PF-DTA    DMDMOP1OBJ/QUOTEITEM                 (Exists)
+        REQ{0}->[25] *SRCMBR DDS DMDEMOPRD1/QDDSSRC(QUOTEITEM)      (Exists)
+  Object, Owner, TS: *FILE DMDMOP1OBJ/QUOTEITEM PF, DMAGID_X, 2024-10-26 20:09:59
+  Source           : *MBR DMDEMOPRD1/QDDSSRC(QUOTEITEM)  
 
 
  File Data for a PF
-  Object, Owner, TS: *FILE DMPRD1OBJ/QUOTEITEM PF, DMAGID_X, 2024-10-22 20:30:52
-  Source           : *MBR DMPRD1/QDDSSRC(QUOTEITEM)  
+  Object, Owner, TS: *FILE DMDMOP1OBJ/QUOTEITEM PF, DMAGID_X, 2024-10-26 20:09:59
+  Source           : *MBR DMDEMOPRD1/QDDSSRC(QUOTEITEM)  
 
-  Printing File Information for PF DMPRD1OBJ/QUOTEITEM
+  Printing File Information for PF DMDMOP1OBJ/QUOTEITEM
    pf_or_lf(0)  data_or_src(0)  arrival_or_keyed(0)  level_check(1)  select_omit_LF(0)
    single_or_double_byte_data(0)  single_or_double_byte_lits(0)  ext_or_pgm_desc_file(0)
-   src_file(QDDSSRC   )  src_mbr(QUOTEITEM )  src_lib(DMPRD1    )
+   src_file(QDDSSRC   )  src_mbr(QUOTEITEM )  src_lib(DMDEMOPRD1)
     alw_read(0)  alw_write(0)  alw_update(0)  alw_delete(0)
    one_or_multi_ccsids(0)  has_allow_nulls(0)  has_var_len(0)  has_TS(0)
    has_graphic_data(0)  distributed_file(0)  has_user_defined_types(0)  has_large_objects(0)  has_datalinks(0)
@@ -483,29 +483,29 @@ Object Detail Report (*OBJDETAIL)
    has_rowid(0)  has_row_change_TS(0)  keep_in_memory(0)
    storage_SSD(0)  max_mbrs(1)  max_wait_time(30)  force_write_ratio(0)
    curr_nbr_of_mbrs(1)  max_rcd_wait(60)  nbr_rcd_fmts(1)  first_supported_VRM(<V7R1M0)
-   org_pub_aut(*CHANGE   )  file_lvl_id(1241022203052)  rel_level(V7R4M0)  lang_id(ENU)  cntry_id(US)  text_ccsid(0)
+   org_pub_aut(*CHANGE   )  file_lvl_id(1241026200959)  rel_level(V7R4M0)  lang_id(ENU)  cntry_id(US)  text_ccsid(0)
    asp(0)  max_nbr_of_fields(43)  max_rcd_len(5551)  sort_seq_tbl_ind(2)
   dfp_rounding( )  dfp_warn( )
 
 
- [25] *SRCMBR DDS     DMPRD1/QDDSSRC         (QUOTEITEM)   (Exists)
-  Object, Owner, TS: *SRCMBR DMPRD1/QDDSSRC DDS, DMAGID_X, 2024-10-22 20:30:52
-  Source           : *MBR DMPRD1/QDDSSRC(QUOTEITEM)  
+ [25] *SRCMBR DDS     DMDEMOPRD1/QDDSSRC     (QUOTEITEM)   (Exists)
+  Object, Owner, TS: *SRCMBR DMDEMOPRD1/QDDSSRC DDS, DMAGID_X, 2024-10-26 20:09:59
+  Source           : *MBR DMDEMOPRD1/QDDSSRC(QUOTEITEM)  
 
 
  File Data for a DDS
-  Object, Owner, TS: *SRCMBR DMPRD1/QDDSSRC DDS, DMAGID_X, 2024-10-22 20:30:52
-  Source           : *MBR DMPRD1/QDDSSRC(QUOTEITEM)  
+  Object, Owner, TS: *SRCMBR DMDEMOPRD1/QDDSSRC DDS, DMAGID_X, 2024-10-26 20:09:59
+  Source           : *MBR DMDEMOPRD1/QDDSSRC(QUOTEITEM)  
 
   
 
- [26] *DTAARA         DMPRD1OBJ/ERAALZDIR                  (Exists)
- [27] *DTAARA         DMPRD1/ERAALZDIR                     (Exists)
- [28] *DTAARA         DMPRD1/ERADIR1                       (Exists)
- [29] *DTAARA         DMPRD1/ERALIB1                       (Exists)
- [30] *DTAARA         DMPRD1/ERALIB2                       (Exists)
- [31] *DTAARA         DMPRD1/GITREPO                       (Exists)
- [32] *DTAARA         DMPRD1/IGITOFFSET                    (Exists)
- [33] *DTAARA         DMPRD1/IGITPRPCTL                    (Exists)
- [34] *DTAARA         DMPRD1/LASTSAVE                      (Exists)
+ [26] *DTAARA         DMDMOP1OBJ/ERAALZDIR                 (Exists)
+ [27] *DTAARA         DMDEMOPRD1/ERAALZDIR                 (Exists)
+ [28] *DTAARA         DMDEMOPRD1/ERADIR1                   (Exists)
+ [29] *DTAARA         DMDEMOPRD1/ERALIB1                   (Exists)
+ [30] *DTAARA         DMDEMOPRD1/ERALIB2                   (Exists)
+ [31] *DTAARA         DMDEMOPRD1/GITREPO                   (Exists)
+ [32] *DTAARA         DMDEMOPRD1/IGITOFFSET                (Exists)
+ [33] *DTAARA         DMDEMOPRD1/IGITPRPCTL                (Exists)
+ [34] *DTAARA         DMDEMOPRD1/LASTSAVE                  (Exists)
 End of Object Detail Report

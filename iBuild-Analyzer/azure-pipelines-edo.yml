@@ -16,9 +16,9 @@ variables:
 - name: STAGINGDIR
   value: /home/azure/staging$(Build.BuildId)
 - name: LIB1
-  value: '@AZ$(Build.BuildId)_L1'    # originally DMPRD1OBJ
+  value: '@AZ$(Build.BuildId)_L1'    # originally DMDMOP1OBJ
 - name: LIB2
-  value: '@AZ$(Build.BuildId)_L2'    # originally DMPRD1
+  value: '@AZ$(Build.BuildId)_L2'    # originally DMDEMOPRD1
 
 steps:
 #  Copy the makefiles to the IBM i system
@@ -43,9 +43,9 @@ steps:
       # Or for IFS repositories:
       #   git clone -q <git URL> $(STAGINGDIR)/ifsrepo
 
-      # Create and configure LIB1 (originally DMPRD1)
+      # Create and configure LIB1 (originally DMDEMOPRD1)
       system "CRTLIB $(LIB2)"
-      system "GITCLONE REPO('git@github.com:danmdemo/demoapp1.git') FLDER('$(STAGINGDIR)/LIB2') LIB($(LIB2))"
+      system "GITCLONE REPO('git@github.com:danmdemo/dmdemo.git') FLDER('$(STAGINGDIR)/LIB2') LIB($(LIB2))"
 
       # Execute each makefile in the project.
       cd $(STAGINGDIR)/makefiles
