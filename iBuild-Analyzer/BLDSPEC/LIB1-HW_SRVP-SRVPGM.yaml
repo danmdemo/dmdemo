@@ -1,0 +1,25 @@
+---
+targets:
+  LIB1-HW_SRVP-SRVPGM :
+    objlib: LIB1
+    objname: HW_SRVP
+    objtype: SRVPGM
+    requisites :
+      - HW_RPG.MODULE
+      - HW_CL.MODULE
+    requisiteyamlrecords :
+      - LIB1-HW_RPG-MODULE
+      - LIB1-HW_CL-MODULE
+    command: CRTSRVPGM
+    parameters:
+      - "SRVPGM($(LIB1)/HW_SRVP)"
+      - "MODULE(HW_RPG HW_CL)"
+      - "EXPORT(*ALL)"
+      - "ACTGRP(*CALLER)"
+      - "ALWUPD(*YES)"
+      - "ALWLIBUPD(*NO)"
+      - "USRPRF(*USER)"
+      - "ALWRINZ(*NO)"
+      - "STGMDL(*SNGLVL)"
+      - "ARGOPT(*NO)"
+      - "DETAIL(*BASIC)"

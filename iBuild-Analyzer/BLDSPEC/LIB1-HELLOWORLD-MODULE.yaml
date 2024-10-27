@@ -1,0 +1,28 @@
+---
+targets:
+  LIB1-HELLOWORLD-MODULE :
+    objlib: LIB1
+    objname: HELLOWORLD
+    objtype: MODULE
+    objattr: CLE
+    requisites :
+      - QCSRC.FILE/HELLOWORLD.MBR
+    requisiteyamlrecords :
+      - LIB1-QCSRC-SRCMBR-HELLOWORLD
+    command: CRTCMOD
+    parameters:
+      - "SRCFILE(QCSRC)"
+      - "SRCMBR(HELLOWORLD)"
+      - "TEXT('The source for our Hello World program')"
+      - "OUTPUT(*PRINT)"
+      - "ENBPFRCOL(*PEP)"
+      - "PRFDTA(*NOCOL)"
+      - "STGMDL(*SNGLVL)"
+      - "TGTCCSID(37)"
+      - "MODULE($(LIB1)/HELLOWORLD)"
+  LIB1-QCSRC-SRCMBR-HELLOWORLD :
+    objlib: LIB1
+    objname: QCSRC
+    objtype: SRCMBR
+    objattr: "C"
+    mbrname: HELLOWORLD

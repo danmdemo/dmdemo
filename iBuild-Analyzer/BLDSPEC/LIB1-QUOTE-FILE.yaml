@@ -1,0 +1,24 @@
+---
+targets:
+  LIB1-QUOTE-FILE :
+    objlib: LIB1
+    objname: QUOTE
+    objtype: FILE
+    objattr: PF
+    requisites :
+      - QDDSSRC.FILE/QUOTE.MBR
+    requisiteyamlrecords :
+      - LIB1-QDDSSRC-SRCMBR-QUOTE
+    command: EDOCRTOBJ
+    parameters:
+      - "BLDTGT($(LIB1)/QUOTE)"
+      - "OBJTYPE(*FILE)"
+      - "OBJATTR(PF)"
+      - "CMD(CRTPF)"
+      - "CMDPARMS(' FILE($(LIB1)/QUOTE) SRCFILE(QDDSSRC) SRCMBR(QUOTE)')"
+  LIB1-QDDSSRC-SRCMBR-QUOTE :
+    objlib: LIB1
+    objname: QDDSSRC
+    objtype: SRCMBR
+    objattr: "PF"
+    mbrname: QUOTE

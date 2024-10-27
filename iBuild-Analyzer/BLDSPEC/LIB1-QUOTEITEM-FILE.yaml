@@ -1,0 +1,24 @@
+---
+targets:
+  LIB1-QUOTEITEM-FILE :
+    objlib: LIB1
+    objname: QUOTEITEM
+    objtype: FILE
+    objattr: PF
+    requisites :
+      - QDDSSRC.FILE/QUOTEITEM.MBR
+    requisiteyamlrecords :
+      - LIB1-QDDSSRC-SRCMBR-QUOTEITEM
+    command: EDOCRTOBJ
+    parameters:
+      - "BLDTGT($(LIB1)/QUOTEITEM)"
+      - "OBJTYPE(*FILE)"
+      - "OBJATTR(PF)"
+      - "CMD(CRTPF)"
+      - "CMDPARMS(' FILE($(LIB1)/QUOTEITEM) SRCFILE(QDDSSRC) SRCMBR(QUOTEITEM)')"
+  LIB1-QDDSSRC-SRCMBR-QUOTEITEM :
+    objlib: LIB1
+    objname: QDDSSRC
+    objtype: SRCMBR
+    objattr: "PF"
+    mbrname: QUOTEITEM

@@ -1,0 +1,26 @@
+---
+targets:
+  LIB1-HW_CL-MODULE :
+    objlib: LIB1
+    objname: HW_CL
+    objtype: MODULE
+    objattr: CLLE
+    requisites :
+      - QCLSRC.FILE/HW_CL.MBR
+    requisiteyamlrecords :
+      - LIB1-QCLSRC-SRCMBR-HW_CL
+    command: CRTCLMOD
+    parameters:
+      - "SRCFILE(QCLSRC)"
+      - "SRCMBR(HW_CL)"
+      - "TEXT('Hello World from CL')"
+      - "ALWRTVSRC(*YES)"
+      - "SRTSEQ(*HEX)"
+      - "LANGID(*JOBRUN)"
+      - "MODULE($(LIB1)/HW_CL)"
+  LIB1-QCLSRC-SRCMBR-HW_CL :
+    objlib: LIB1
+    objname: QCLSRC
+    objtype: SRCMBR
+    objattr: "CLP"
+    mbrname: HW_CL

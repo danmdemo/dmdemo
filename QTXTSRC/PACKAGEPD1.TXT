@@ -1,0 +1,9 @@
+lib dmprd1obj dmprd1dep {
+       *pgm
+       *srvpgm
+       *msgf
+       *cmd
+}
+sql dmprd1obj dmprd1dep {
+           *TABLE
+           }

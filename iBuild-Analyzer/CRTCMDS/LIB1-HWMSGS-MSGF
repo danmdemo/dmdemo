@@ -1,0 +1,24 @@
+-include makefile_defs
+
+&USER     = 'DMAGID_X'
+&CURR_DIR = '/home/dmagid_x'
+&HOME_DIR = '/home/'
+CHGLIBL LIBL(DMPRD1OBJ QGPL QTEMP)
+HWMSGS.MSGF : $(MAKEFILE_LIST) 
+	-system -v -k "DLTMSGF MSGF($(LIB1)/HWMSGS)"
+ifdef LIB1-HWMSGS-MSGF-PARMS
+	$(eval @_PARMS = $(LIB1-HWMSGS-MSGF-PARMS))
+else
+	$(eval @_PARMS = $(CRTMSGFPARMS))
+endif
+	system -v -k "CRTMSGF $(@_PARMS) MSGF($(LIB1)/HWMSGS)"
+	system -v -k "ADDMSGD MSGID(HWD0001) MSGF($(LIB1)/HWMSGS) MSG('Hello World!') SEV(0) TYPE(*NONE) LEN(*NONE)"
+	system -v -k "ADDMSGD MSGID(HWD0002) MSGF($(LIB1)/HWMSGS) MSG('Hello World 2!') SECLVL('Sent from a stream file source') SEV(0) TYPE(*NONE) LEN(*NONE)"
+	system -v -k "ADDMSGD MSGID(HWD0003) MSGF($(LIB1)/HWMSGS) MSG('Hello World From RPG!') SECLVL('This message is emitted from a source-member based RPG module.') SEV(0) TYPE(*NONE) LEN(*NONE)"
+	system -v -k "ADDMSGD MSGID(HWD0004) MSGF($(LIB1)/HWMSGS) MSG('Hello World From RPG Code in a Stream File!') SEV(0) TYPE(*NONE) LEN(*NONE)"
+	system -v -k "ADDMSGD MSGID(HWD0005) MSGF($(LIB1)/HWMSGS) MSG('Hello World From C++!') SECLVL('This message was emitted from C++ code from a source member.') SEV(0) TYPE(*NONE) LEN(*NONE)"
+	system -v -k "ADDMSGD MSGID(HWD0006) MSGF($(LIB1)/HWMSGS) MSG('''Hello World From a C++ Stream File!') SECLVL('This message was emitted from C++ code from a stream file.') SEV(0) TYPE(*NONE) LEN(*NONE)"
+	system -v -k "ADDMSGD MSGID(HWD0007) MSGF($(LIB1)/HWMSGS) MSG('Hello World From CL') SECLVL('This Hello World message was issued from an API call from CL.') SEV(0) TYPE(*NONE) LEN(*NONE)"
+	system -v -k "ADDMSGD MSGID(HWD0008) MSGF($(LIB1)/HWMSGS) MSG('Hello World From a CL Module Built from a Stream File!') SEV(0) TYPE(*NONE) LEN(*NONE)"
+	system -v -k "ADDMSGD MSGID(HWD0009) MSGF($(LIB1)/HWMSGS) MSG('Hello World From!') SEV(0) TYPE(*NONE) LEN(*NONE)"
+

@@ -1,0 +1,28 @@
+---
+targets:
+  LIB1-HW_RPG-MODULE :
+    objlib: LIB1
+    objname: HW_RPG
+    objtype: MODULE
+    objattr: RPGLE
+    requisites :
+      - QRPGLESRC.FILE/HW_RPG.MBR
+    requisiteyamlrecords :
+      - LIB1-QRPGLESRC-SRCMBR-HW_RPG
+    command: CRTRPGMOD
+    parameters:
+      - "SRCFILE(QRPGLESRC)"
+      - "SRCMBR(HW_RPG)"
+      - "TEXT('Hello World RPG module')"
+      - "TGTCCSID(37)"
+      - "PRFDTA(*NOCOL)"
+      - "SRTSEQ(*HEX)"
+      - "LANGID(*JOBRUN)"
+      - "MODULE($(LIB1)/HW_RPG)"
+      - "STGMDL(*INHERIT)"
+  LIB1-QRPGLESRC-SRCMBR-HW_RPG :
+    objlib: LIB1
+    objname: QRPGLESRC
+    objtype: SRCMBR
+    objattr: "RPGLE"
+    mbrname: HW_RPG

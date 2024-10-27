@@ -1,0 +1,28 @@
+---
+targets:
+  LIB1-HELLOWORLD-PGM :
+    objlib: LIB1
+    objname: HELLOWORLD
+    objtype: PGM
+    objattr: CLE
+    requisites :
+      - HW_SRVP.SRVPGM
+      - HELLOWORLD.MODULE
+      - HW_CPP.MODULE
+    requisiteyamlrecords :
+      - LIB1-HW_SRVP-SRVPGM
+      - LIB1-HELLOWORLD-MODULE
+      - LIB1-HW_CPP-MODULE
+    command: CRTPGM
+    parameters:
+      - "PGM($(LIB1)/HELLOWORLD)"
+      - "USRPRF(*USER)"
+      - "TEXT('The source for our Hello World program')"
+      - "MODULE(HELLOWORLD HW_CPP)"
+      - "ENTMOD(HELLOWORLD)"
+      - "BNDSRVPGM((HW_SRVP))"
+      - "ACTGRP(*NEW)"
+      - "DETAIL(*BASIC)"
+      - "ALWUPD(*YES)"
+      - "ALWLIBUPD(*NO)"
+      - "ALWRINZ(*NO)"

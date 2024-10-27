@@ -1,0 +1,27 @@
+---
+targets:
+  LIB1-CALC010-PGM :
+    objlib: LIB1
+    objname: CALC010
+    objtype: PGM
+    objattr: RPGLE
+    requisites :
+      - QRPGLESRC.FILE/CALC010.MBR
+    requisiteyamlrecords :
+      - LIB1-QRPGLESRC-SRCMBR-CALC010
+    command: CRTBNDRPG
+    parameters:
+      - "PGM($(LIB1)/CALC010)"
+      - "USRPRF(*USER)"
+      - "DFTACTGRP(*YES)"
+      - "SRCFILE(QRPGLESRC)"
+      - "SRCMBR(CALC010)"
+      - "TGTCCSID(37)"
+      - "SRTSEQ(*HEX)"
+      - "LANGID(*JOBRUN)"
+  LIB1-QRPGLESRC-SRCMBR-CALC010 :
+    objlib: LIB1
+    objname: QRPGLESRC
+    objtype: SRCMBR
+    objattr: "RPGLE"
+    mbrname: CALC010

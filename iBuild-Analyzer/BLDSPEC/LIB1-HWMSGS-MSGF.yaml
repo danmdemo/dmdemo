@@ -1,0 +1,69 @@
+---
+targets:
+  LIB1-HWMSGS-MSGF :
+    objlib: LIB1
+    objname: HWMSGS
+    objtype: MSGF
+    command: CRTMSGF
+    parameters:
+      - "MSGF($(LIB1)/HWMSGS)"
+    Messages :
+      - HWD0001:
+        - "MSGF($(LIB1)/HWMSGS)"
+        - "MSG('Hello World!')"
+        - "SEV(0)"
+        - "TYPE(*NONE)"
+        - "LEN(*NONE)"
+      - HWD0002:
+        - "MSGF($(LIB1)/HWMSGS)"
+        - "MSG('Hello World 2!')"
+        - "SECLVL('Sent from a stream file source')"
+        - "SEV(0)"
+        - "TYPE(*NONE)"
+        - "LEN(*NONE)"
+      - HWD0003:
+        - "MSGF($(LIB1)/HWMSGS)"
+        - "MSG('Hello World From RPG!')"
+        - "SECLVL('This message is emitted from a source-member based RPG module.')"
+        - "SEV(0)"
+        - "TYPE(*NONE)"
+        - "LEN(*NONE)"
+      - HWD0004:
+        - "MSGF($(LIB1)/HWMSGS)"
+        - "MSG('Hello World From RPG Code in a Stream File!')"
+        - "SEV(0)"
+        - "TYPE(*NONE)"
+        - "LEN(*NONE)"
+      - HWD0005:
+        - "MSGF($(LIB1)/HWMSGS)"
+        - "MSG('Hello World From C++!')"
+        - "SECLVL('This message was emitted from C++ code from a source member.')"
+        - "SEV(0)"
+        - "TYPE(*NONE)"
+        - "LEN(*NONE)"
+      - HWD0006:
+        - "MSGF($(LIB1)/HWMSGS)"
+        - "MSG('''Hello World From a C++ Stream File!')"
+        - "SECLVL('This message was emitted from C++ code from a stream file.')"
+        - "SEV(0)"
+        - "TYPE(*NONE)"
+        - "LEN(*NONE)"
+      - HWD0007:
+        - "MSGF($(LIB1)/HWMSGS)"
+        - "MSG('Hello World From CL')"
+        - "SECLVL('This Hello World message was issued from an API call from CL.')"
+        - "SEV(0)"
+        - "TYPE(*NONE)"
+        - "LEN(*NONE)"
+      - HWD0008:
+        - "MSGF($(LIB1)/HWMSGS)"
+        - "MSG('Hello World From a CL Module Built from a Stream File!')"
+        - "SEV(0)"
+        - "TYPE(*NONE)"
+        - "LEN(*NONE)"
+      - HWD0009:
+        - "MSGF($(LIB1)/HWMSGS)"
+        - "MSG('Hello World From!')"
+        - "SEV(0)"
+        - "TYPE(*NONE)"
+        - "LEN(*NONE)"

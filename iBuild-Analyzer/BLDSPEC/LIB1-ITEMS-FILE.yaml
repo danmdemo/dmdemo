@@ -1,0 +1,22 @@
+---
+targets:
+  LIB1-ITEMS-FILE :
+    objlib: LIB1
+    objname: ITEMS
+    objtype: FILE
+    objattr: PF
+    requisites :
+      - QSQLSRC.FILE/ITEMS.MBR
+    requisiteyamlrecords :
+      - LIB1-QSQLSRC-SRCMBR-ITEMS
+    command: RUNSQLSTM
+    parameters:
+      - "SRCFILE(QSQLSRC)"
+      - "SRCMBR(ITEMS)"
+      - "DFTRDBCOL($(LIB1))"
+  LIB1-QSQLSRC-SRCMBR-ITEMS :
+    objlib: LIB1
+    objname: QSQLSRC
+    objtype: SRCMBR
+    objattr: "SQL"
+    mbrname: ITEMS

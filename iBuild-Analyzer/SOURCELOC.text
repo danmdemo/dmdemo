@@ -1,0 +1,20 @@
+Source Location Report
+Summary report:
+DMPRD1OBJ objects:
+    Objects with source in library DMPRD1: 11
+
+Detail report:
+DMPRD1OBJ objects:
+    Objects with source in library DMPRD1:
+        *PGM RPGLE      DMPRD1OBJ/CALC010                   
+        *MODULE RPGLE   DMPRD1OBJ/HW_RPG                    
+        *MODULE CLLE    DMPRD1OBJ/HW_CL                     
+        *MODULE CLE     DMPRD1OBJ/HELLOWORLD                
+        *MODULE CPPLE   DMPRD1OBJ/HW_CPP                    
+        *CMD            DMPRD1OBJ/CALC010                   
+        *CMD            DMPRD1OBJ/HELLOWORLD                
+        *FILE PF-DTA    DMPRD1OBJ/CUSTOMER                  
+        *FILE PF-DTA    DMPRD1OBJ/ITEMS                     
+        *FILE PF-DTA    DMPRD1OBJ/QUOTE                     
+        *FILE PF-DTA    DMPRD1OBJ/QUOTEITEM                 
+End of Source Location Report.

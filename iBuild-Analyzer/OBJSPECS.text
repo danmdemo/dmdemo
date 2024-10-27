@@ -1,0 +1,51 @@
+Object Selection Report (*OBJSEL)
+Input object selection Criteria:
+   DMPRD1OBJ/*ALL (*PGM *SRVPGM *SQLPKG *MODULE *BNDDIR *CMD *MSGF *FILE *MENU *PNLGRP *NOTTGT) ~
+   DMPRD1/*ALL (*PGM *SRVPGM *SQLPKG *MODULE *BNDDIR *CMD *MSGF *FILE *MENU *PNLGRP *NOTTGT) ~
+
+Result of object selection:
+   DMPRD1OBJ/*ALL (*PGM *SRVPGM *SQLPKG *MODULE *BNDDIR *CMD *MSGF *FILE *MENU *PNLGRP *NOTTGT) ~
+     DMPRD1OBJ
+          *PGM
+               CALC010     RPGLE   
+               HELLOWORLD  CLE     
+          *SRVPGM
+               HW_SRVP             
+          *MODULE
+               HELLOWORLD  CLE     
+               HW_CL       CLLE    
+               HW_CPP      CPPLE   
+               HW_RPG      RPGLE   
+          *CMD
+               CALC010             
+               HELLOWORLD          
+          *MSGF
+               HWMSGS              
+          *FILE
+               CUSTOMER    PF-DTA  
+               ITEMS       PF-DTA  
+               QUOTE       PF-DTA  
+               QUOTEITEM   PF-DTA  
+          *DTAARA
+               ERAALZDIR           
+   DMPRD1/*ALL (*PGM *SRVPGM *SQLPKG *MODULE *BNDDIR *CMD *MSGF *FILE *MENU *PNLGRP *NOTTGT) ~
+     DMPRD1
+          *FILE
+               QCLSRC      PF-SRC  
+               QCMDSRC     PF-SRC  
+               QCPPSRC     PF-SRC  
+               QCSRC       PF-SRC  
+               QDDSSRC     PF-SRC  
+               QRPGLESRC   PF-SRC  
+               QSQLSRC     PF-SRC  
+               QTXTSRC     PF-SRC  
+          *DTAARA
+               ERAALZDIR           
+               ERADIR1             
+               ERALIB1             
+               ERALIB2             
+               GITREPO             
+               IGITOFFSET          
+               IGITPRPCTL          
+               LASTSAVE            
+End of Object Selection Report

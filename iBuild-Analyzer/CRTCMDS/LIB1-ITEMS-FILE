@@ -1,0 +1,9 @@
+-include makefile_defs
+
+&USER     = 'DMAGID_X'
+&CURR_DIR = '/home/dmagid_x'
+&HOME_DIR = '/home/'
+CHGLIBL LIBL(DMPRD1OBJ QGPL QTEMP)
+ITEMS.FILE : QSQLSRC.FILE/ITEMS.MBR
+	system -v -k "RUNSQLSTM SRCFILE(QSQLSRC) SRCMBR(ITEMS) DFTRDBCOL($(LIB1))"
+

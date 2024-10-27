@@ -1,0 +1,28 @@
+---
+targets:
+  LIB1-HW_CPP-MODULE :
+    objlib: LIB1
+    objname: HW_CPP
+    objtype: MODULE
+    objattr: CPPLE
+    requisites :
+      - QCPPSRC.FILE/HW_CPP.MBR
+    requisiteyamlrecords :
+      - LIB1-QCPPSRC-SRCMBR-HW_CPP
+    command: CRTCPPMOD
+    parameters:
+      - "SRCFILE(QCPPSRC)"
+      - "SRCMBR(HW_CPP)"
+      - "TEXT('Hello World C++ source')"
+      - "OUTPUT(*PRINT)"
+      - "ENBPFRCOL(*PEP)"
+      - "PRFDTA(*NOCOL)"
+      - "STGMDL(*SNGLVL)"
+      - "TGTCCSID(37)"
+      - "MODULE($(LIB1)/HW_CPP)"
+  LIB1-QCPPSRC-SRCMBR-HW_CPP :
+    objlib: LIB1
+    objname: QCPPSRC
+    objtype: SRCMBR
+    objattr: "CPPLE"
+    mbrname: HW_CPP

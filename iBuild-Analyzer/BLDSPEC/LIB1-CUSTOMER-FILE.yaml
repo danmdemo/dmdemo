@@ -1,0 +1,24 @@
+---
+targets:
+  LIB1-CUSTOMER-FILE :
+    objlib: LIB1
+    objname: CUSTOMER
+    objtype: FILE
+    objattr: PF
+    requisites :
+      - QDDSSRC.FILE/CUSTOMER.MBR
+    requisiteyamlrecords :
+      - LIB1-QDDSSRC-SRCMBR-CUSTOMER
+    command: EDOCRTOBJ
+    parameters:
+      - "BLDTGT($(LIB1)/CUSTOMER)"
+      - "OBJTYPE(*FILE)"
+      - "OBJATTR(PF)"
+      - "CMD(CRTPF)"
+      - "CMDPARMS(' FILE($(LIB1)/CUSTOMER) SRCFILE(QDDSSRC) SRCMBR(CUSTOMER)')"
+  LIB1-QDDSSRC-SRCMBR-CUSTOMER :
+    objlib: LIB1
+    objname: QDDSSRC
+    objtype: SRCMBR
+    objattr: "PF"
+    mbrname: CUSTOMER

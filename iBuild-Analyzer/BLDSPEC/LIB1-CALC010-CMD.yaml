@@ -1,0 +1,26 @@
+---
+targets:
+  LIB1-CALC010-CMD :
+    objlib: LIB1
+    objname: CALC010
+    objtype: CMD
+    requisites :
+      - QCMDSRC.FILE/CALC010.MBR
+    requisiteyamlrecords :
+      - LIB1-QCMDSRC-SRCMBR-CALC010
+    command: CRTCMD
+    parameters:
+      - "CMD($(LIB1)/CALC010)"
+      - "PGM($(LIB1)/CALC010)"
+      - "SRCFILE(QCMDSRC)"
+      - "SRCMBR(CALC010)"
+      - "MODE(*PROD *DEBUG *SERVICE)"
+      - "ALLOW(*BPGM *IPGM *EXEC *INTERACT *BATCH *BREXX *IREXX *BMOD *IMOD)"
+      - "CURLIB(*NOCHG)"
+      - "PRDLIB(*NOCHG)"
+  LIB1-QCMDSRC-SRCMBR-CALC010 :
+    objlib: LIB1
+    objname: QCMDSRC
+    objtype: SRCMBR
+    objattr: "CMD"
+    mbrname: CALC010

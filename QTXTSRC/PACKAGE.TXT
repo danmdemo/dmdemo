@@ -1,0 +1,9 @@
+lib dmr1intobj dmr1intdep {
+       *pgm
+       *srvpgm
+       *msgf
+       *cmd
+}
+sql dmr1intobj dmr1intdep {
+           *TABLE
+           }

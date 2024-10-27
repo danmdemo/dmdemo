@@ -1,0 +1,24 @@
+Requisite Location Report
+Summary report:
+DMPRD1OBJ objects:
+    Objects with requisites in library DMPRD1OBJ: 2
+    Objects with requisites in library DMPRD1: 10
+    Objects with requisites in library DMPRD1OBJ: 2
+
+Detail report:
+DMPRD1OBJ objects:
+    Objects with requisites in library DMPRD1:
+        *CMD            DMPRD1OBJ/CALC010                   
+        *CMD            DMPRD1OBJ/HELLOWORLD                
+        *FILE PF-DTA    DMPRD1OBJ/CUSTOMER                  
+        *FILE PF-DTA    DMPRD1OBJ/ITEMS                     
+        *FILE PF-DTA    DMPRD1OBJ/QUOTE                     
+        *FILE PF-DTA    DMPRD1OBJ/QUOTEITEM                 
+        *MODULE CLE     DMPRD1OBJ/HELLOWORLD                
+        *MODULE CLLE    DMPRD1OBJ/HW_CL                     
+        *MODULE CPPLE   DMPRD1OBJ/HW_CPP                    
+        *MODULE RPGLE   DMPRD1OBJ/HW_RPG                    
+    Objects with requisites in library DMPRD1OBJ:
+        *PGM CLE        DMPRD1OBJ/HELLOWORLD                
+        *SRVPGM         DMPRD1OBJ/HW_SRVP                   
+End of Requisite Location Report.
